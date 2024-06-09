@@ -26,24 +26,26 @@ void loop() {
     case 1: eff1(); break; 
     case 2: eff2(); break; 
 .   case 3: eff3(); break;
+   } 
   } 
-} 
- void eff0() {
-   If (flg) {
-     static uint8_t count;
-     static int_t tmr;
-     if (millis() - tmr >= PERIOD) {
-       tmr = millis();
-       if (++count >= 1) {
-          count = 0;
-          flg = false;
-        }
-        switch (count) {
-          case 0: setRGB(0xCC, 0xCC, 0xFF); break;
-        }
-      }
-    }
-  }
+ }
+}
+void eff0() {
+  If (flg) {
+    static uint8_t count;
+    static int_t tmr;
+    if (millis() - tmr >= PERIOD) {
+      tmr = millis();
+      if (++count >= 1) {
+         count = 0;
+         flg = false;
+       }
+       switch (count) {
+         case 0: setRGB(0xCC, 0xCC, 0xFF); break;
+       }
+     }
+   }
+ }
 void eff1() { 
   if (flg) { 
     static uint8_t count; 
