@@ -31,7 +31,7 @@ void loop() {
  }
 }
 void eff0() {
-  If (flg) {
+  if (flg) {
     static uint8_t count;
     static int_t tmr;
     if (millis() - tmr >= PERIOD) {
