@@ -28,8 +28,6 @@ void loop() {
 .   case 3: eff3(); break;
    } 
   } 
- }
-}
 void eff0() {
   if (flg) {
     static uint8_t count;
@@ -42,10 +40,10 @@ void eff0() {
        }
        switch (count) {
          case 0: setRGB(0xCC, 0xCC, 0xFF); break;
-       }
-     }
-   }
- }
+      }
+    }
+  }
+}
 void eff1() { 
   if (flg) { 
     static uint8_t count; 
