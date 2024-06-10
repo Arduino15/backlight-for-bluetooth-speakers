@@ -28,7 +28,7 @@ void loop() {
 .   case 3: eff3(); break;
    } 
   } 
-void eff0() {
+void eff0() { // эффект фонарика
   if (flg) {
     static uint8_t count;
     static int_t tmr;
