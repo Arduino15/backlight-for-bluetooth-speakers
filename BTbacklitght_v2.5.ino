@@ -18,7 +18,8 @@ void setup() {
 void loop() { 
   static uint8_t count; 
   if (btn.click()) { 
-    if (++count >= 3) count = 0; 
+    if (++count >= 4)
+    count = 0; 
     flg = true; 
   } 
   switch (count) { 
