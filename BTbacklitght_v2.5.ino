@@ -33,7 +33,7 @@ void loop() {
 void eff0() { // эффект фонарика
   if (flg) {
     static uint8_t count;
-    static int_t tmr;
+    static uint32_t tmr;
     if (millis() - tmr >= PERIOD) {
       tmr = millis();
       if (++count >= 1) {
