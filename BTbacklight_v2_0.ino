@@ -16,6 +16,7 @@ void setup() {
 } 
  
 void loop() { 
+  btn.tick();
   static uint8_t count; 
   if (btn.click()) { 
     if (++count >= 3) count = 0; 
