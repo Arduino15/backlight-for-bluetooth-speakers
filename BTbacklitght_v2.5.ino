@@ -16,7 +16,7 @@ void setup() {
 } 
  
 void loop() { 
-. btn.tick();
+  btn.tick();
   static uint8_t count; 
   if (btn.click()) { 
     if (++count >= 4)
@@ -27,7 +27,7 @@ void loop() {
     case 0: eff0(); break; 
     case 1: eff1(); break; 
     case 2: eff2(); break; 
-.   case 3: eff3(); break;
+    case 3: eff3(); break;
    } 
   } 
 void eff0() { // эффект фонарика
