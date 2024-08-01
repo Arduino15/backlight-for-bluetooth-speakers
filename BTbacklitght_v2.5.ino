@@ -16,6 +16,7 @@ void setup() {
 } 
  
 void loop() { 
+. btn.tick();
   static uint8_t count; 
   if (btn.click()) { 
     if (++count >= 4)
@@ -41,10 +42,10 @@ void eff0() { // эффект фонарика
        }
        switch (count) {
          case 0: setRGB(0xCC, 0xCC, 0xFF); break;
-      }
-    }
-  }
-}
+      } 
+    } 
+  } 
+} 
 void eff1() { 
   if (flg) { 
     static uint8_t count; 
